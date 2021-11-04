@@ -1,6 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
+using XamForms.Excercises.Main;
 
 namespace XamForms.Excercises
 {
@@ -11,6 +10,8 @@ namespace XamForms.Excercises
             InitializeComponent();
 
             MainPage = new MainPage();
+            new AppBootstrapper();
+            MainPage = AppBootstrapper.CreateMainPage();
         }
 
         protected override void OnStart()

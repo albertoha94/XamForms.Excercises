@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rxui:ReactiveContentPage
+    x:Class="XamForms.Excercises.MagicGradients.MGExPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:magic="http://magic.com/schemas/gradients"
+    xmlns:main="clr-namespace:XamForms.Excercises.MagicGradients"
+    xmlns:rxui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:TypeArguments="main:MGExViewModel">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Margin="10"
+                    FontSize="Large"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="TIP: Remember to use the playground app to make better looking gradients." />
+                <magic:GradientView>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                linear-gradient(225deg, rgba(38,208,82,1) 0%, rgba(26,142,56,1) 100%)
+            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView>
+                <Label
+                    Margin="10"
+                    FontSize="Large"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="TIP: We can remove 0% and 100% because if we don't add values they will be predefined by the NuGet.\nIn the case of two colours: 0% &amp; 100% ; Three colours: 0% &amp; 50% &amp; 100% ; Four colours: 0% &amp; 33% &amp; 66% &amp; 100% ; and so on…" />
+                <magic:GradientView>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                linear-gradient(225deg, hsl(297, 100%, 50%), hsl(297, 100%, 40%))
+            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView>
+                <magic:GradientView>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                linear-gradient(225deg, #8CFF00, #70CC00)
+            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView>
+                <magic:GradientView
+                    Margin="50"
+                    xct:TouchEffect.NativeAnimation="True"
+                    HeightRequest="50">
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                linear-gradient(225deg, rgb(0, 145, 255), rgb(0, 101, 179))
+            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                    <magic:GradientView.Mask>
+                        <magic:MaskCollection>
+                            <magic:RectangleMask Corners="14" Size="100%" />
+                            <magic:TextMask
+                                ClipMode="Exclude"
+                                FontSize="Subtitle"
+                                Text="Button" />
+                        </magic:MaskCollection>
+                    </magic:GradientView.Mask>
+                </magic:GradientView>
+                <magic:GradientView>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                linear-gradient(225deg, rgb(0, 145, 255), rgb(0, 101, 179))
+            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                    <magic:GradientView.Mask>
+                        <magic:TextMask
+                            FontAttributes="Bold,Italic"
+                            FontSize="80"
+                            Text="Magic!" />
+                    </magic:GradientView.Mask>
+                </magic:GradientView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</rxui:ReactiveContentPage>

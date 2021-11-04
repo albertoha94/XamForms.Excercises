@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Excercises.Android
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Excercises.iOS", "XamForms.Excercises.iOS\XamForms.Excercises.iOS.csproj", "{F4B50B1A-2200-4A97-B024-6E678F57B298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Excercises", "XamForms.Excercises\XamForms.Excercises.csproj", "{1E56D0C9-65F0-4AD4-B6BC-CABD62C528F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamForms.Excercises", "XamForms.Excercises\XamForms.Excercises.csproj", "{1E56D0C9-65F0-4AD4-B6BC-CABD62C528F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63E35F2E-0EAF-4E5B-8AD2-9BCFCD22A97D}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
