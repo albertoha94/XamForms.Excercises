@@ -1,9 +1,8 @@
 ﻿using ReactiveUI;
 using ReactiveUI.XamForms;
 using System.Reactive.Disposables;
-using XamForms.Excercises.ViewModels;
 
-namespace XamForms.Excercises
+namespace XamForms.Excercises.Main
 {
     public partial class MainPage : ReactiveContentPage<MainViewModel>
     {

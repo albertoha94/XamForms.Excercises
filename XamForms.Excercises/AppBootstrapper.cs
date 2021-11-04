@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using XamForms.Excercises.MagicGradients;
+using XamForms.Excercises.Main;
 using XamForms.Excercises.ViewModels;
 
 namespace XamForms.Excercises
@@ -23,6 +25,7 @@ namespace XamForms.Excercises
             Router = new RoutingState();
             Locator.CurrentMutable.RegisterConstant(this, typeof(IScreen));
             Locator.CurrentMutable.Register(() => new MainPage(), typeof(IViewFor<MainViewModel>));
+            Locator.CurrentMutable.Register(() => new MGExPage(), typeof(IViewFor<MGExViewModel>));
             /*Locator.CurrentMutable.Register(() => new UpcomingMoviesCellView(), typeof(IViewFor<UpcomingMoviesCellViewModel>));
             Locator.CurrentMutable.Register(() => new MovieDetailView(), typeof(IViewFor<MovieDetailViewModel>));
             Locator.CurrentMutable.Register(() => new AboutView(), typeof(IViewFor<AboutViewModel>));
